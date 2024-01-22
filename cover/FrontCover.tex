@@ -37,69 +37,73 @@
 %% ----------------------------------------------------------------------------
 %% ----------------------------------------------------------------------------
 \begin{document}
-\frontmatter
 
-%%%%%%%%%%%%%%
-%% Cover page
-%%%%%%%%%%%%%%
+  \frontmatter
 
-%% No header nor footer on the cover
-\thispagestyle{empty}
+  \begin{titlepage}
+      % Configurações Preliminares
 
-%% Cover illustration
-%\ThisLLCornerWallPaper{1}{coverArt}
-\CenterWallPaper{1.1}{../images/CoverArt.jpg}
+      \centering
+      
+      \scshape % Small Caps
 
+      \vspace*{-1.5cm}
+      
+      % Título
+      
+      \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+      \rule{\textwidth}{0.4pt}
+      
+      \vspace{0.7\baselineskip}
+      
+      \Huge{Como Jogar Go}\\
+      \vspace*{10pt}
+      \LARGE{Uma Introdução Concisa}
+      
+      \vspace{0.275\baselineskip}
+      
+      \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+      \rule{\textwidth}{1.6pt}
 
-%% Bar across the top
-%\tikz[remember picture,overlay]%
+      % Imagem
+      
+      \vspace*{.4cm}
 
-\begin{tikzpicture}[remember picture,overlay]
-  \node[fill=BannerColor,
-    minimum width=\paperwidth,
-    minimum height=6em,
-    anchor=north, 
-  ] at (current page.north){};
-  \node[
-    font=\LARGE\bfseries,
-    text=Cornsilk,
-    xshift=0mm, yshift=-14mm
-  ] at (current page.north) {\TheBookSeries};
-\end{tikzpicture}
+      \begin{figure}[h]
+          \centering
+          \includegraphics[scale=.9]{../images/AncientGameNaoNumerado.png}
+      \end{figure}
 
-\vspace*{1\baselineskip}
+      % Autores
+      
+      \vspace*{0.2cm}
 
-{\bfseries\itshape%
- \color{LightGoldenrod!50!Gold}
- \fontsize{24.88pt}{36pt}
- \selectfont{\TheMainTitle}\par}
+      \large{por}
 
-  \vspace*{2\baselineskip}
+      \vspace*{0.125cm}
 
-{\bfseries\itshape\
-  \color{LightGoldenrod!50!Gold}
-  \fontsize{14.4pt}{18pt}\selectfont
-  {\TheSubTitle\par}
+      \Large{Richard Bozulich}\\
+      \normalsize{\&}\\
+      \Large{James Davies}
 
-\vspace*{1.5\baselineskip}
+      % Tradutor
+      
+      \vfill
 
-{\LARGE\color{LightGoldenrod}
-  {\TheAuthor}\par
-}
+      \large{traduzido por}
 
-%% Bar across the bottom
-\begin{tikzpicture}[remember picture,overlay]
-  \node[fill={BannerColor},
-    minimum width=\paperwidth,
-    minimum height=4em,
-    anchor={south}]
-    at (current page.south) {};
-  \node[
-    anchor={south},
-    font=\LARGE\bfseries,
-    text=Cornsilk,
-    xshift=0mm, yshift=8.5mm
-  ] at (current page.south) {\ThePublisherName};
-\end{tikzpicture}
+      \vspace*{0.125cm}
 
+      \Large{Philippe Fanaro}
+      
+      % Editora e Logos
+
+      \vfill
+      
+      \large{Kiseido Publishing Company}
+
+      \vspace*{0.25cm}
+      
+      \large{Fanaro.io}
+  \end{titlepage}
 \end{document}
